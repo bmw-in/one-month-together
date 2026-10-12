@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eee0c9">
+<meta name="description" content="A little letter, made with love for Anusha.">
+<title>For my chhotu shi bacchi 💗</title>
+<style>
+:root{
+  --ivory:#f3e8d5; --paper:#f4e7c9; --paper-light:#fff4dc; --ink:#503629;
+  --brown:#805b45; --rose:#b86f7b; --rose-dark:#8e4e5a; --gold:#d8b77d;
+  --ease:cubic-bezier(.22,.75,.22,1); --open-time:1.2s;
+}
+*{box-sizing:border-box}
+html{min-height:100%;background:#eee0c9;scroll-behavior:smooth}
+body{margin:0;min-height:100vh;min-height:100svh;color:var(--ink);font-family:Georgia,"Times New Roman",serif;background:
+ radial-gradient(ellipse at 50% 35%,rgba(255,250,230,.94) 0,rgba(246,232,207,.8) 33%,rgba(224,199,163,.38) 72%,rgba(194,158,119,.3) 100%),
+ repeating-linear-gradient(7deg,rgba(115,79,48,.025) 0 1px,transparent 1px 4px),
+ #eee0c9;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.24;z-index:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.15'/%3E%3C/svg%3E")}
+button{font:inherit}
+.stage{position:relative;z-index:1;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 16px 38px;overflow:hidden}
+.intro{width:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .7s ease,transform .7s ease}
+.inscription{font-family:"Segoe Print","Bradley Hand",cursive;font-size:clamp(19px,4vw,25px);color:#795144;text-align:center;margin:0 0 22px;transform:rotate(-2deg);text-shadow:0 1px #fff6df}
+.envelope-wrap{position:relative;width:min(88vw,470px);height:clamp(245px,59vw,320px);perspective:1200px;filter:drop-shadow(0 18px 18px rgba(94,58,37,.18));animation:float 5.5s ease-in-out infinite}
+.envelope{position:absolute;inset:0;transform-style:preserve-3d}
+.env-back{position:absolute;inset:0;border-radius:5px;background:linear-gradient(135deg,#ead5b7,#f6e7cd 48%,#d8b997);border:1px solid rgba(128,87,55,.28);box-shadow:inset 0 0 24px rgba(117,75,44,.1)}
+.env-letter-glow{position:absolute;left:9%;right:9%;top:7%;height:80%;background:radial-gradient(ellipse at 50% 70%,rgba(255,218,143,.72),transparent 68%);opacity:0;transition:opacity 1s;z-index:1}
+.env-letter{position:absolute;z-index:2;left:8%;right:8%;bottom:8%;height:85%;background:linear-gradient(100deg,#e7d3ad,#fff0d1 25%,#f5e3bf 70%,#dfc69d);border:1px solid #c6a77d;box-shadow:0 3px 8px #805b4530;transform:translateY(0) scale(.94);transform-origin:bottom center;transition:transform 1.5s var(--ease);border-radius:2px}
+.env-letter:before{content:"";position:absolute;inset:12px;background:repeating-linear-gradient(to bottom,transparent 0 17px,rgba(139,99,64,.14) 18px 19px)}
+.env-side{position:absolute;inset:0;z-index:4;pointer-events:none}
+.env-left,.env-right{position:absolute;inset:0;background:linear-gradient(120deg,#f4e3c5,#e4cba8);clip-path:polygon(0 0,51% 51%,0 100%);filter:drop-shadow(1px 0 1px #a9845f66)}
+.env-right{clip-path:polygon(100% 0,49% 51%,100% 100%);background:linear-gradient(240deg,#f2dfbe,#d9bc96)}
+.env-bottom{position:absolute;inset:0;z-index:5;clip-path:polygon(0 100%,50% 43%,100% 100%);background:linear-gradient(10deg,#d7b893,#f2dfbd 54%,#dfc29c);filter:drop-shadow(0 -2px 3px #8d684744)}
+.env-flap{position:absolute;left:0;right:0;top:0;height:100%;z-index:7;transform-origin:top center;transform:rotateX(0);backface-visibility:visible;transition:transform 1.15s var(--ease);clip-path:polygon(0 0,100% 0,50% 58%);background:linear-gradient(165deg,#f7e8cc 0%,#e9d1ad 66%,#d5b58d);filter:drop-shadow(0 3px 4px #76513840)}
+.env-flap:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(110deg,transparent 0 11px,#fff8e21c 12px 13px)}
+.seal{position:absolute;z-index:9;left:50%;top:46%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;display:grid;place-items:center;color:#f9dfd0;font-size:27px;background:radial-gradient(circle at 33% 25%,#d99a9c,#a95f6c 57%,#783d4a);border:2px solid #d7a1a0;box-shadow:inset 0 0 0 3px #9e5663,0 3px 7px #63372f60;transition:opacity .45s,transform .6s; text-shadow:0 1px 2px #783d4a}
+.seal:after{content:"";position:absolute;inset:6px;border:1px solid #f0c3b7;border-radius:50%;opacity:.7}
+.ribbon{position:absolute;z-index:10;inset:-12px -5px;pointer-events:none;transition:opacity .6s .55s}
+.ribbon-band{position:absolute;left:calc(50% - 12px);top:0;bottom:0;width:24px;background:linear-gradient(90deg,#9b5264,#e4a4ad 30%,#f4c4c4 52%,#b96c7b 78%,#8b4658);box-shadow:1px 0 3px #6d354533,-1px 0 3px #fff2d966}
+.ribbon-cross{position:absolute;left:0;right:0;top:47%;height:23px;background:linear-gradient(180deg,#a6586b,#e5a5ad 35%,#f3c7c5 52%,#b76678 82%);box-shadow:0 2px 4px #77404a44}
+.bow{position:absolute;left:50%;top:47%;width:110px;height:63px;transform:translate(-50%,-50%);filter:drop-shadow(0 4px 3px #673c4144)}
+.bow:before,.bow:after{content:"";position:absolute;width:48px;height:34px;top:4px;background:linear-gradient(145deg,#f5c8c7,#c27685 55%,#994d60);border:1px solid #a75a6b}
+.bow:before{right:52%;border-radius:80% 18% 72% 25%;transform:rotate(20deg)}
+.bow:after{left:52%;border-radius:18% 80% 25% 72%;transform:rotate(-20deg)}
+.bow-knot{position:absolute;left:50%;top:16px;transform:translateX(-50%);width:19px;height:24px;border-radius:40%;background:linear-gradient(90deg,#a45466,#f1b9bf,#a45466);z-index:2}
+.bow-tail{position:absolute;top:30px;width:24px;height:34px;background:linear-gradient(90deg,#9b4f61,#e8a8b1,#a75467);clip-path:polygon(0 0,100% 0,88% 100%,50% 79%,10% 100%);transform-origin:top center}
+.bow-tail.one{left:28px;transform:rotate(15deg)}.bow-tail.two{right:27px;transform:rotate(-15deg)}
+.open-button{margin-top:34px;padding:14px 27px;border:1px solid #a96f72;border-radius:999px;background:linear-gradient(135deg,#b96f7b,#98525e);color:#fff7ed;box-shadow:0 7px 18px #8c4c5a35;cursor:pointer;letter-spacing:.02em;transition:transform .25s,box-shadow .25s,opacity .4s}
+.open-button:hover{transform:translateY(-2px);box-shadow:0 10px 23px #8c4c5a45}.open-button:active{transform:translateY(0)}
+.open-button:focus-visible,.skip:focus-visible{outline:3px solid #70414b;outline-offset:4px}
+.hint{font-size:13px;letter-spacing:.03em;color:#8c6c57;margin:13px 0 0;text-align:center}
+.skip{position:fixed;z-index:30;right:14px;top:14px;border:1px solid #b28b73;background:#f8ecd9eF;color:#674838;border-radius:99px;padding:9px 13px;font-size:13px;cursor:pointer;box-shadow:0 3px 12px #68462a18}
+.skip[hidden]{display:none}
+.reading{position:relative;z-index:3;width:min(100%,900px);margin:0 auto;padding:28px 14px 70px;opacity:0;transform:translateY(24px);display:none;transition:opacity .9s ease,transform .9s ease}
+.paper{position:relative;isolation:isolate;overflow:hidden;padding:clamp(25px,6vw,66px) clamp(20px,7vw,76px) clamp(32px,7vw,70px);background:
+ radial-gradient(ellipse at 0% 0%,rgba(146,91,45,.19),transparent 19%),
+ radial-gradient(ellipse at 100% 3%,rgba(140,82,39,.18),transparent 18%),
+ radial-gradient(ellipse at 2% 96%,rgba(151,94,50,.19),transparent 20%),
+ radial-gradient(ellipse at 98% 98%,rgba(135,77,39,.2),transparent 19%),
+ radial-gradient(ellipse at 80% 36%,rgba(197,147,86,.09),transparent 27%),
+ radial-gradient(ellipse at 22% 63%,rgba(172,118,64,.08),transparent 24%),
+ linear-gradient(105deg,#ead7b2 0%,#f8edcf 12%,#f5e7c6 49%,#fff1d4 76%,#ead6af 100%);
+box-shadow:0 22px 55px #61452c30,0 3px 8px #6c4a2b2b,inset 0 0 0 1px #b89a6c;clip-path:polygon(1.5% .3%,4% .6%,6% .2%,9% .5%,12% .1%,16% .45%,20% .2%,24% .55%,29% .1%,34% .4%,40% .15%,46% .5%,52% .2%,59% .45%,64% .1%,70% .35%,76% .2%,82% .55%,88% .15%,93% .45%,98% .2%,99.7% 3%,99.3% 8%,99.8% 14%,99.4% 20%,99.8% 28%,99.3% 35%,99.7% 43%,99.2% 50%,99.8% 59%,99.3% 67%,99.7% 76%,99.2% 84%,99.7% 92%,99% 98%,95% 99.6%,89% 99.2%,83% 99.7%,76% 99.3%,69% 99.8%,62% 99.3%,55% 99.7%,48% 99.3%,40% 99.8%,33% 99.3%,26% 99.7%,19% 99.2%,12% 99.7%,6% 99.2%,1% 99.5%,.4% 96%,.8% 90%,.3% 82%,.7% 74%,.2% 66%,.7% 57%,.2% 49%,.7% 41%,.2% 33%,.7% 25%,.2% 17%,.7% 9%)}
+.paper:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.18;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)' opacity='.28'/%3E%3C/svg%3E")}
+.paper:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;background:
+ radial-gradient(ellipse at 10% 20%,transparent 0 48px,rgba(144,91,47,.13) 50px 52px,transparent 54px),
+ radial-gradient(ellipse at 92% 68%,transparent 0 35px,rgba(147,95,54,.11) 37px 39px,transparent 41px),
+ radial-gradient(ellipse at 88% 11%,rgba(145,90,44,.11),transparent 65px),
+ repeating-linear-gradient(2deg,transparent 0 22px,rgba(130,89,48,.025) 23px 24px)}
+.letter-copy{white-space:pre-wrap;overflow-wrap:anywhere;font-size:clamp(16px,2.1vw,18px);line-height:1.86;letter-spacing:.003em;color:#503629;text-shadow:0 1px rgba(255,249,230,.38);position:relative}
+.letter-copy::first-line{color:#6f4638}
+.signature-heart{display:block;text-align:center;color:#b56c78;font-size:24px;margin-top:22px;opacity:0;transform:scale(.8);transition:opacity 1s,transform 1s}
+.signature-heart.visible{opacity:.85;transform:scale(1)}
+.stage.opening .intro{opacity:0;transform:translateY(14px);pointer-events:none}
+.stage.opening .ribbon{opacity:0;transform:translateY(28px) rotate(4deg)}
+.stage.opening .seal{opacity:0;transform:translate(-50%,-50%) scale(.6) rotate(-15deg)}
+.stage.opening .env-flap{transform:rotateX(180deg)}
+.stage.opening .env-letter-glow{opacity:1}
+.stage.opening .env-letter{transform:translateY(-78%) scale(1.02)}
+.stage.opening .envelope-wrap{animation:none;transform:translateY(24px) scale(.92);transition:transform 1.5s var(--ease)}
+.stage.opening .env-bottom{opacity:.8}
+.stage.opened{min-height:auto;display:block;padding:0 0 1px;overflow:visible}
+.stage.opened .intro{display:none}
+.stage.opened .reading{display:block;opacity:1;transform:translateY(0)}
+.stage.opened .envelope-wrap{position:absolute;top:8px;left:50%;transform:translateX(-50%) scale(.7);opacity:.22;filter:blur(.4px);pointer-events:none;z-index:0}
+.stage.opened .paper{animation:paperArrive 1s var(--ease) both}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-6px) rotate(.25deg)}}
+@keyframes paperArrive{from{opacity:.7;transform:translateY(20px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:520px){
+ .stage{padding:24px 12px 32px}
+ .envelope-wrap{width:min(91vw,400px);height:clamp(225px,60vw,285px)}
+ .seal{width:52px;height:52px;font-size:23px}
+ .bow{transform:translate(-50%,-50%) scale(.84)}
+ .ribbon-band{width:19px;left:calc(50% - 9.5px)}
+ .ribbon-cross{height:19px}
+ .open-button{margin-top:28px}
+ .reading{padding:12px 8px 42px}
+ .paper{padding:31px 21px 40px}
+ .letter-copy{font-size:16.5px;line-height:1.78}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<main class="stage" id="stage">
+  <section class="intro" id="intro" aria-label="Sealed anniversary letter">
+    <p class="inscription">For my chhotu shi bacchi 💗</p>
+    <div class="envelope-wrap" aria-hidden="true">
+      <div class="envelope">
+        <div class="env-back"></div>
+        <div class="env-letter-glow"></div>
+        <div class="env-letter"></div>
+        <div class="env-side">
+          <div class="env-left"></div><div class="env-right"></div>
+        </div>
+        <div class="env-bottom"></div>
+        <div class="env-flap"></div>
+        <div class="seal">♡</div>
+        <div class="ribbon">
+          <div class="ribbon-band"></div><div class="ribbon-cross"></div>
+          <div class="bow"><span class="bow-knot"></span><span class="bow-tail one"></span><span class="bow-tail two"></span></div>
+        </div>
+      </div>
+    </div>
+    <button class="open-button" id="openButton" type="button">Open your letter 💌</button>
+    <p class="hint">Made with all my love, just for you.</p>
+  </section>
+  <button class="skip" id="skipButton" type="button" hidden>Skip animation</button>
+  <section class="reading" id="reading" aria-label="Anniversary letter">
+    <article class="paper">
+      <div class="letter-copy" id="letterCopy">For my chhotu shi bacchi,
+
+Meri Pyaarii Rasmalaiii,
+
+Sooo, it's 12th October, and we're officially one month together. ✨✨✨✨✨✨
+
+I know one month might not sound like a lot of time, but humari story sirf ek month pehle start nahi hui thi. We had so much before that too, and I think that's what makes this feel even more special to me.
+
+I still remember how we started as friends and slowly became such an important part of each other's lives. I remember maine last year 7 December ko mai GC me join hua tha, not knowing ki vo mujhe kya dene vala hai, kon meri life me aane vala hai. Fir hamne DM me baat start kri. Somewhere along the way, talking to you became one of those things that just felt normal to me. Tujhse random baate karna, Mazak krna, ek doosre ko pareshan karna, apni baatein share karna, teri baate sunna, aur bhi bohot kuchh. I didn't really sit down one day and decide that you were going to become this important to me. It just happened, little by little, until one day I realised ki you're not just someone I enjoy talking to. You're someone I genuinely want in my life.
+
+And then came the part where I started feeling something more for you. Honestly, I never planned for things to turn out this way, but I'm really glad they did. I already cared about you so much as my best friend, as my HG, and then those feelings slowly became something I couldn't really ignore anymore.
+
+And then there's 20th May. The day I asked you that question about spending your life with me as your jeevansathi, and you told me you needed time. I won't lie, I wanted a yes, obviously, but I also wanted you to mean it whenever you gave me an answer. I didn't want you to say it just because I wanted to hear it. I wanted it to be your decision, your feelings, and your choice.
+
+And then, 12th September, 10:03 AM.
+
+"Umm yess. 👉🏻👈🏻"
+
+BABYYYY!!!
+
+I don't think you realise how special that exact moment is to me. A date and a time that might look completely ordinary to anyone else became something I will never forget. Because that was the moment when I finally got to call you MY girlfriend, my partner, not just in my head or in the way we behaved with eachother, but for real. And I still get happy thinking about it. Andd, madam ji ne yes bolne me bohott wait kraa diyaaaa.
+But issokkiee. We have whole life to be with each otherrr.
+
+And being serious, I'm genuinely glad that we got here the way we did. I got to be close to you before becoming your boyfriend, your partner, and now I get to experience both. I get to call you my girlfriend and still have my best friend in you. And I think that's one of my favourite things about us.
+
+I love that I can be stupid around you without having to act like some different version of myself. I love our random conversations. I love the way we tease each other sometimes aur fir koi ek muh fula leta hai, fir doosra manata hai. I love our cute possesive nicknames, and all those tiny moments that probably wouldn't mean much to anyone else but somehow mean so much to me, to us. I love that we can talk about serious things and then immediately start acting like two idiots. And I love that even the most ordinary conversations with you can become something I remember later.
+
+And bby, I know that hum hamesha ek doosre ko perfectly nahi samajh payenge. Sometimes we might misunderstand what the other person means, kabhi kisi baat ka bura lag sakta hai, kabhi humme se koi ek kuchh feel kar rha hoga jo doosre ko immediately samajh nahi aayega. And that's okay, meri jaan. I don't want us to feel like we always have to say the perfect thing or understand everything on the first try. I just want us to keep trying to understand each other, even when it's a little difficult.
+
+And if kabhi meri kisi baat se tumhe hurt ho, even if I didn't mean it that way, I want you to feel comfortable telling me. I might not always understand it immediately, and maybe kabhi mujhe bhi kuchh baatein samajhne mein time lage, but I'll always want to listen and understand where you're coming from. And I want to do the same for you too. Not to prove who's right or who's wrong, but because your feelings matter to me, and I never want us to become two people who stop trying to understand each other just because something went wrong.
+
+I also want you to know that I really appreciate you. Not just because you're my girlfriend, but because of the person you are. I appreciate the way you care, the way you try to understand me, and the way you let me be myself around you. I know neither of us is perfect, and I don't expect us to be. We're still learning about each other, learning how to understand each other better, and figuring things out as we go. But I want you to know that your feelings matter to me, your comfort matters to me, and I want you to always feel like you can be honest with me.
+I want us to grow together. And I'm proud of you mera bacchaa.
+
+And one thing I really want you to know is that I don't want our love to depend on us having perfect days or never hurting each other's feelings. I want us to be able to have bad days too, to be honest when something bothers us, to apologise when we need to, and to forgive each other when we can. I want us to remember that even when we're upset with each other, we're still on the same side. We don't have to be perfect for each other, bby. We just have to keep being honest, keep caring, and keep making the effort.
+
+I know we're still young, and we have so much to learn about ourselves and each other. We won't always get everything right, but I hope we can keep growing into better versions of ourselves while still being the same two idiots who fell in love. And even when we understand each other a little better tomorrow than we do today, I hope we never stop being curious about each other. There's always going to be something new to learn about you, and I genuinely want to know all those little parts of you too.
+
+And mera baby, I hope we keep making memories together. More random conversations, more laughing at stupid things, more walks, more dates, more little moments that don't look like much from the outside but mean everything to us. I don't know exactly what every future day will look like, but I know I want to keep getting to know you, keep growing with you, and keep choosing to be here with you. I don't know the future, but I can, we can build it together.
+
+And now look at us. One month together, and I'm sitting here trying to fit so many feelings into a few paragraphs because writing you "I love you" once is not enough for me.
+Hehehehe
+
+Thank you for choosing me, meri jaaaannnnn. Thank you for being my best friend, my girl, my Rasmalaiii, my mommyyy, my everything, and the person who makes so many ordinary parts of my day feel special. I'm really, really happy that it's you.
+
+Happy one month to us meri Rasmalaiiii!!!! 💗💗💗💗💗💗💗💗💗💗✨✨✨✨✨✨✨✨
+
+One month down, and I'm so glad our story got this chapter.
+
+I loveee youuu sooo muchhh Anushaaaa, more than anythinggg.
+I lovee youu soo muchhh merii jaannn
+I loveeee youuu sooo muchhhh merii chhotu shi bacchiii
+I lovee youu soo muchhh meraa babyyyy
+I lovee youuu so muchhhh merii Rasmalaiiiii
+I love you soo muchhhh Mommyyyy
+I loveee youuu sooo muchhhhh meraaaa bacchaaa
+I lovee you 3000
+I loveeee youuu soooo muchhhhhhh 🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻✨✨✨✨✨✨✨✨✨✨✨✨💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋
+
+Mommy's Good Boi,
+Arnav</div>
+      <span class="signature-heart" id="signatureHeart" aria-hidden="true">♡</span>
+    </article>
+  </section>
+</main>
+<script>
+(() => {
+  const stage = document.getElementById('stage');
+  const openButton = document.getElementById('openButton');
+  const skipButton = document.getElementById('skipButton');
+  const reading = document.getElementById('reading');
+  const heart = document.getElementById('signatureHeart');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let started = false;
+  let finished = false;
+  let finishTimer = null;
+
+  function finishOpening() {
+    if (finished) return;
+    finished = true;
+    if (finishTimer) clearTimeout(finishTimer);
+    stage.classList.remove('opening');
+    stage.classList.add('opened');
+    skipButton.hidden = true;
+    reading.setAttribute('aria-label', 'Anniversary letter, fully opened');
+    // Move focus to the letter without changing its text or making it unselectable.
+    reading.setAttribute('tabindex', '-1');
+    if (reducedMotion) reading.focus({preventScroll:true});
+    setTimeout(() => heart.classList.add('visible'), 500);
+  }
+
+  function startOpening() {
+    if (started) return;
+    started = true;
+    if (reducedMotion) {
+      finishOpening();
+      return;
+    }
+    stage.classList.add('opening');
+    openButton.disabled = true;
+    skipButton.hidden = false;
+    // A single coordinated timeline; skip remains available throughout.
+    finishTimer = setTimeout(finishOpening, 2900);
+  }
+
+  openButton.addEventListener('click', startOpening);
+  skipButton.addEventListener('click', finishOpening);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && started && !finished) finishOpening();
+  });
+
+  // If the recipient uses browser zoom or rotates a phone during the sequence,
+  // preserve the one-shot animation state rather than restarting it.
+  window.addEventListener('resize', () => {
+    if (started && !finished && window.innerWidth < 250) finishOpening();
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
